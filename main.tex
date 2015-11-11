@@ -22,13 +22,27 @@
 \maketitle
 
 \section{Introduction}
-This is a \LaTeX\ style template to be used in the typesetting of the technical essay.
-The purpose of the rest of the text included herein is to illustrate the usage of some of the commands that you might want to use.
-This is just a template with some relevant text, it is not the full assignment description.
-Please read the document \emph{Guidelines for Technical Essay} for the complete requirements for this assignment.
+
+
+Domain Name System (DNS) is one of the backbone systems of the internet. It is a protocol that is used to lookup a domain name's IP-address, which the network needs to route http traffic. In later years it has been discovered that it has weaknesses that is easy to exploit. The exploit which is going to be looked at in essay is DNS tunneling. DNS tunneling started with people who wanted internet access at hotels and cafés without paying for it. It is now used in "Command and Control" attack where the commands can be sendt encrypted over DNS masked as a regular response, and to transfer data undetected out of a secure network. With the use of smartphones using the internet it is discovered that using DNS tunneling an user could avoid getting charged for the internet use. This essay will first explain some basics of how DNS work and the important elements that is exploited and the use of DNS tunneling, specifically the use on mobile networks.
+
+
+
 
 
 \section{Problem Discussion}
+\subsection{DNS}
+There are many different record types in the DNS, most commonly is \texttt{'A'} and \texttt{'AAAA'} records which contains the ipv4 and the ipv6 addresses respectively. You also have a \texttt{'CNAME'} record which translate a domain name into another which is associated with an IP-address, e.g. if you enter \texttt{www.aftenposten.no} in the browser to visit the website of Aftenposten, the first response of the DNS server is a CNAME which refers you to the domain \texttt{aftenposten.no}. The network then send a new request to the DNS with aftenposten.no and receives an 'A' record with the IP-address. Now DNS has over 30 different record types, each has a different purpose and different size of payloads which is an important feature when it comes to DNS tunneling.
+
+DNS has a hierarchical build. Each server sends the request to the next server with more specific information about the domain name you want to reach, going in a postfix order. 
+
+
+
+\subsection{DNS Tunneling}
+
+
+
+
 
 \subsection{Requirements of Form}
 
